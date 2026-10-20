@@ -19,6 +19,12 @@
 
 **模糊需要显式提供背景。** 组件重新绘制你传入的背景，不会自动捕获卡片后面的其他视图。
 
+## 网页版
+
+另有网页版：[glass-card-web](https://github.com/alexko0421/glass-card-web)（[demo](https://alexko0421.github.io/glass-card-web/)）。一个 CSS 文件加一个 React 组件，九种颜色相同。
+
+最主要的区别：网页上 `backdrop-filter` 直接模糊卡片后面的真实页面，不用提供背景，叠在一起的卡会互相模糊完整的材质；这里的背景是你传入的视图，演示里下层卡片是扁平重画的。详见[两者的区别](https://github.com/alexko0421/glass-card-web/blob/main/README.zh-CN.md#和-swiftui-版的区别)。
+
 ## 运行要求
 
 macOS 14 或更新版本、Swift 5.9 或更新版本，以及 Xcode 命令行工具。没有外部包依赖。

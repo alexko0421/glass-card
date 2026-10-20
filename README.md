@@ -19,6 +19,12 @@ The public library exposes the material. Layout, expansion, selection, dragging,
 
 **The blur uses an explicitly supplied backdrop.** It redraws that view; it does not automatically capture live views behind the card. See [How the material works](#how-the-material-works).
 
+## Web version
+
+There is also a web version: [glass-card-web](https://github.com/alexko0421/glass-card-web) ([demo](https://alexko0421.github.io/glass-card-web/)). It is one CSS file plus a React component, with the same nine colors.
+
+The main difference: on the web, `backdrop-filter` blurs the real page behind the card, so you do not supply a backdrop, and overlapping cards blur each other's full material. Here, the backdrop is a view you pass in and the demo flattens lower cards. See [how the two differ](https://github.com/alexko0421/glass-card-web#how-it-differs-from-the-swiftui-version).
+
 ## Requirements
 
 macOS 14 or later, Swift 5.9 or later, and Xcode command-line tools. The package has no external dependencies.
